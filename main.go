@@ -1,7 +1,7 @@
-// TODO   check GET return code for each link
-//		if link is outside domain = skip
-//		if link is inside domain = go to it and check for link
-//		repeat
+// go through all the links on the domain
+// then get GET responses from all the unique link
+// if 4xx or 5xx add to deadlinks
+// print out dead links
 
 package main
 
