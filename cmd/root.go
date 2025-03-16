@@ -19,13 +19,9 @@ import (
 
 var rootCmd = &cobra.Command{
 	Use:   "cli_web_scraper [url]",
-	Short: "A brief description of your application",
-	Long: `A longer description that spans multiple lines and likely contains
-examples and usage of using your application. For example:
-
-Cobra is a CLI library for Go that empowers applications.
-This application is a tool to generate the needed files
-to quickly create a Cobra application.`,
+	Short: "Scrapes the given domain for links and checks them",
+	Long: `Scrapes the given domain for links by crawling through links extracted with html parser.
+	While going through them, links get organized into different slices, marking them as either inside, outside or dead.`,
 	DisableFlagsInUseLine: true,
 	Args:                  cobra.ExactArgs(1),
 	Run:                   findDead,
