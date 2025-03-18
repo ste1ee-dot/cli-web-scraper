@@ -8,15 +8,15 @@ This project was made on purpose of learning [Go](https://go.dev/). It's probabl
 
   - Windows
 ```bash
-  go build
-  go install
-  cli_web_scraper [url]
+go build
+go install
+cli_web_scraper [url]
 ```
 
   - Linux
 ```bash
-  go build
-  ./cli_web_scraper [url]
+go build
+./cli_web_scraper [url]
 ```
 
 ## Packages used
